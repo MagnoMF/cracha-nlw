@@ -1,0 +1,78 @@
+/*CSS = Cascating Stylesheet
+Ordem de aparição dos elementos -- Quem entra por ultimo tem mais força*/
+*{
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  --black: hsla(240, 6%, 13%);
+  --gray: hsla(240, 9%, 89%);
+  display: grid;
+  place-items: center;
+  font-family: PT Sans, sans-serif;
+  --webkit--font--smoothing: antialiased;
+}
+
+main {
+  background: url(img/background.svg) ;
+  width: 375px;
+  height: 812px;
+}
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--gray)
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0 ;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+h1 {
+  /*Altera as configurações do comando H1*/
+ font-size: 1.5rem;
+  marigin-top: 1.5rem;
+}
+a{
+  color: var(--gray);
+  text-decoration: none;
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  aling-items: center;
+}
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 3rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
